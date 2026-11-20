@@ -1,0 +1,20 @@
+services:
+  shareddrop:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_BASEMAP: ${NEXT_PUBLIC_BASEMAP:-on}
+    ports:
+      - "${SHAREDROP_PORT:-3000}:3000"
+    volumes:
+      - runtime:/data
+    environment:
+      SHAREDROP_SEED_SAMPLE: ${SHAREDROP_SEED_SAMPLE:-1}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:3000/api/health', timeout=3)"]
+      interval: 10s
+      timeout: 4s
+      start_period: 20s
+      retries: 4
+volumes:
+  runtime:

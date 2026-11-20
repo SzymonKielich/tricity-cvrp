@@ -1,0 +1,40 @@
+{
+  "language": "English",
+  "dataset_type": "Synthetic data generated for the Mission Climate Hackathon 2026; not real operating records from the companies.",
+  "company": "Hedyla",
+  "files": [
+    {
+      "filename": "hedyla_baseline_assignments.csv",
+      "rows": 10087
+    },
+    {
+      "filename": "hedyla_shops.csv",
+      "rows": 55
+    },
+    {
+      "filename": "hedyla_congestion.csv",
+      "rows": 135
+    },
+    {
+      "filename": "hedyla_destinations.csv",
+      "rows": 170
+    },
+    {
+      "filename": "hedyla_baseline_routes.csv",
+      "rows": 4132
+    },
+    {
+      "filename": "hedyla_distance_matrix.csv",
+      "rows": 25425
+    },
+    {
+      "filename": "hedyla_orders.csv",
+      "rows": 10087
+    },
+    {
+      "filename": "hedyla_vehicles.csv",
+      "rows": 24
+    }
+  ],
+  "notes": "Relational identifiers, numbers, dates and geographic coordinates have been kept unchanged; column headers and categorical labels have been translated."
+}

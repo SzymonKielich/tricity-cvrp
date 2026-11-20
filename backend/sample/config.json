@@ -1,0 +1,20 @@
+{
+  "cargo_max_km": 40,
+  "dates": [
+    "2026-11-05"
+  ],
+  "fleet": {
+    "cargo_bike": 8,
+    "diesel_van": 8,
+    "electric_van": 8
+  },
+  "hub": "COM018",
+  "max_shift_h": 8,
+  "pickup_service_min": 2,
+  "priority_hard": true,
+  "scope": "participating",
+  "time_limit": 15,
+  "travel_buffer_pct": 15,
+  "w_co2": 1,
+  "w_eur": 1
+}

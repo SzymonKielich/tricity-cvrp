@@ -1,0 +1,43 @@
+PHASE solving · OR-Tools 9.15.6755 · 1 day(s)
+Solving 2026-11-05 · 15s search limit
+2026-11-05: OK · 15 tours · 0 unserved of 184 · 15.2s
+PHASE validating · independent constraint checker
+Checked 15 routes, 398 stops, 184 in-scope orders, 0 dropped | travel buffer x1.15
+[OK ] summary dates not in data: 0
+[OK ] duplicate route_id in routes.csv: 0
+[OK ] route without stops: 0
+[OK ] stops without route row: 0
+[OK ] route row inconsistent with stops: 0
+[OK ] vehicle type mismatch: 0
+[OK ] stop_seq not 0..n: 0
+[OK ] route not depot-to-depot: 0
+[OK ] order wrong date / unknown: 0
+[OK ] pickup at wrong shop: 0
+[OK ] delivery at wrong destination: 0
+[OK ] delivery before pickup / other vehicle: 0
+[OK ] pickup window violated (handling done by close): 0
+[OK ] delivery window violated: 0
+[OK ] high-priority after window midpoint: 0
+[OK ] capacity exceeded: 0
+[OK ] travel time not respected: 0
+[OK ] vehicle not empty at end: 0
+[OK ] shift too long: 0
+[OK ] cargo bike over range: 0
+[OK ] vehicle used twice in a day: 0
+[OK ] order not served exactly once: 0
+[OK ] dropped list inconsistent: 0
+[OK ] out-of-scope order served: 0
+[OK ] orders/shops_visited mismatch: 0
+[OK ] start/end mismatch: 0
+[OK ] peak load mismatch: 0
+[OK ] load_after mismatch: 0
+[OK ] km mismatch: 0
+[OK ] cost mismatch: 0
+[OK ] CO2 mismatch: 0
+[OK ] driving time mismatch: 0
+[OK ] service time mismatch: 0
+[OK ] vehicle unavailable in scenario: 0
+[OK ] invalid stop kind: 0
+[OK ] arrival timestamps out of order: 0
+PHASE reporting · recalculating metrics from stop sequence
+Result: verified

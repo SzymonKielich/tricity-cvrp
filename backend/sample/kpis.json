@@ -1,0 +1,131 @@
+{
+  "status": "COMPLETE",
+  "assumptions": {
+    "depot": "COM018",
+    "pickup_service_min": 2.0,
+    "max_shift_h": 8.0,
+    "cargo_max_km": 40.0,
+    "travel_buffer": 1.15,
+    "timing": "departure_phase_worst_case",
+    "priority_hard": true,
+    "all_shops": false,
+    "time_limit": 15
+  },
+  "scope": {
+    "dates": 1,
+    "orders_total": 218,
+    "orders_optimised": 184,
+    "orders_kept_on_baseline": 34,
+    "dropped": 0,
+    "shops_total": 55,
+    "shops_taking_part": 44
+  },
+  "climate": {
+    "km": {
+      "baseline": 842.0,
+      "optimised": 473.6,
+      "reduction_km": 368.4,
+      "reduction_pct": 43.8
+    },
+    "kgco2e": {
+      "baseline": 81.5,
+      "optimised": 17.3,
+      "reduction_kg": 64.2,
+      "reduction_pct": 78.8
+    },
+    "network_incl_non_participants": {
+      "km": {
+        "baseline": 994.6,
+        "optimised": 626.2,
+        "reduction_pct": 37.0
+      },
+      "kgco2e": {
+        "baseline": 101.7,
+        "optimised": 37.5,
+        "reduction_pct": 63.1
+      }
+    }
+  },
+  "economic": {
+    "total_cost_eur": {
+      "baseline": 2157.14,
+      "optimised": 490.91,
+      "savings_eur": 1666.23,
+      "savings_pct": 77.2,
+      "note": "baseline pays the fixed shift cost per route, the plan per vehicle per day"
+    },
+    "variable_cost_eur": {
+      "baseline": 390.14,
+      "optimised": 167.91,
+      "savings_pct": 57.0
+    },
+    "cost_per_delivery_eur": {
+      "baseline": 11.72,
+      "optimised": 2.67
+    },
+    "on_time_rate_pct": {
+      "baseline": 100.0,
+      "optimised": 100.0
+    },
+    "high_priority_in_first_half_of_window_pct": {
+      "baseline": 100.0,
+      "optimised": 100.0
+    },
+    "vehicle_utilisation_pct": {
+      "weight_distance_weighted": {
+        "baseline": 2.6,
+        "optimised": 22.4
+      },
+      "volume_distance_weighted": {
+        "baseline": 1.2,
+        "optimised": 11.8
+      },
+      "weight_average_peak": {
+        "baseline": 5.8,
+        "optimised": 46.6
+      },
+      "note": "distance-weighted = average load over every km driven, empty legs included (headline metric)"
+    },
+    "empty_km_pct": {
+      "baseline": 37.8,
+      "optimised": 11.9
+    },
+    "orders_grouped_pct": {
+      "baseline": 0.0,
+      "optimised": 100.0,
+      "of_all_orders": 84.4
+    },
+    "vehicle_days": {
+      "baseline_routes": 73,
+      "optimised": 15
+    },
+    "fleet_mix": {
+      "baseline": {
+        "cargo_bike": 25,
+        "electric_van": 25,
+        "diesel_van": 23
+      },
+      "optimised": {
+        "cargo_bike": 8,
+        "electric_van": 7
+      }
+    }
+  },
+  "time": {
+    "active_hours_driving_and_service": {
+      "baseline": 77.1,
+      "optimised": 65.1
+    },
+    "optimised_paid_tour_hours": 110.1,
+    "optimised_waiting_share_pct": 40.9,
+    "note": "baseline has no shift times, only driving + service; waiting comes from the 09-12 pickup window"
+  },
+  "cost_sharing": {
+    "rule": "route cost split by each order's stand-alone round trip km",
+    "shops_better_off": 43,
+    "shops": 43,
+    "min_saving_pct": 24.3,
+    "median_saving_pct": 78.8,
+    "max_saving_pct": 95.0
+  }
+}

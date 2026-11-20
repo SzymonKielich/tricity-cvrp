@@ -1,0 +1,30 @@
+{
+  "scenario_id": "5c7e08ce-1aa5-4707-86b2-c4451a13e326",
+  "name": "Viladecans \u00b7 Balanced pilot",
+  "fingerprint": "e6654017e815b83ce372802e51fe112515b76134df8bca5b3c44492a21972cf3",
+  "solver_version": "hedyla-0.1.0+shareddrop.1 / ortools 9.15.6755",
+  "config": {
+    "cargo_max_km": 40,
+    "dates": [
+      "2026-11-05"
+    ],
+    "fleet": {
+      "cargo_bike": 8,
+      "diesel_van": 8,
+      "electric_van": 8
+    },
+    "hub": "COM018",
+    "max_shift_h": 8,
+    "pickup_service_min": 2,
+    "priority_hard": true,
+    "scope": "participating",
+    "time_limit": 15,
+    "travel_buffer_pct": 15,
+    "w_co2": 1,
+    "w_eur": 1
+  },
+  "created_at": "2026-11-19T23:55:49.859799+00:00",
+  "started_at": "2026-11-19T23:55:50.026010+00:00",
+  "finished_at": "2026-11-19T23:56:06.554101+00:00",
+  "job_id": "9dd902ae-f4c4-47a0-bc9d-35da65e67970"
+}
